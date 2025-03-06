@@ -1,1 +1,47 @@
+/**
+ * @name InfinityCastleTheme
+ * @author DustMan5917
+ * @version 1.0
+ * @description A dark, Gothic Discord theme with an Infinity Castle background.
+ * @source https://github.com/DustMan5917/InfiniteDiscordCastle
+ */
 
+:root {
+    /* Background Image */
+    --background-image: url('https://github.com/DustMan5917/InfiniteDiscordCastle/blob/main/Infinite%20Castle.png?raw=true');
+    
+    /* Text Color */
+    --text-color: #F4E1A1; /* Pale Yellow */
+    
+    /* Font */
+    --font-primary: 'Arial', sans-serif; /* Default system font */
+}
+
+/* Apply Background Image */
+body {
+    background: var(--background-image) no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed; /* Ensure background stays fixed during scroll */
+}
+
+/* Ensure background is applied to the main app container */
+.theme-dark, .theme-light {
+    background: var(--background-image) no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+/* Apply Text Color and Font */
+* {
+    color: var(--text-color) !important;
+    font-family: var(--font-primary) !important;
+}
+
+/* Improve Readability */
+.messageContent-2t3eCI {
+    color: var(--text-color) !important;
+}
+
+/* Optional: Change background color of message containers to be semi-transparent */
+.message-2qnXI6 {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
